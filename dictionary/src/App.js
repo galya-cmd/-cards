@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
-
+import 'dicnionary.scss';
 import Dictionary from './components/dictionary';
 
 function App() {

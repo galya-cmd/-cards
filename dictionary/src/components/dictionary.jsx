@@ -1,4 +1,5 @@
-
+import React from 'react';
+import 'dicnionary.scss';
 
 
 function Dictionary(props) {
