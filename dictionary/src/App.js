@@ -8,11 +8,11 @@ function App() {
     <div className="App">
       <Dictionary name="I"/>
       <Dictionary name="am"/>
-      <Dictionary />
-      <Dictionary />
-      <Dictionary />
-      <Dictionary />
-      <Dictionary />
+      <Dictionary name="yellow"/>
+      <Dictionary name="door"/>
+      <Dictionary name="book"/>
+      <Dictionary name="go"/>
+      <Dictionary name="pens"/>
     </div>
   );
 }
