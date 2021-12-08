@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(236, 210, 210);
+}
+.button {
+    margin: 10px;
+    text-align: center;
+    background-color: pink;
+    text-transform: uppercase;
+    border-radius: 10px;
+
+}
+.test {
+    position: absolute;
+    
+}
