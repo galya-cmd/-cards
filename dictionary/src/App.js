@@ -13,6 +13,7 @@ function App() {
       <Dictionary name="book"/>
       <Dictionary name="go"/>
       <Dictionary name="pens"/>
+      <Dictionary name="hi"/>
     </div>
   );
 }
