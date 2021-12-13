@@ -4,7 +4,11 @@ import './dictionary.css';
 function Test(props) {
     return(
         <>
-        <textarea className='text'>Ваше предложение</textarea>
+        <div className='main'>
+            <div className='block'>
+        <textarea className='text'>Составить предложение</textarea>
+        </div>
+        </div>
         
         </>
     )

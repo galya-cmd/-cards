@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(236, 210, 210);
+    background-color: rgb(144, 186, 194);
+    
 }
 .button {
     margin: 10px;
@@ -9,7 +10,12 @@ body {
     border-radius: 10px;
 
 }
-.test {
+.main {
+    position: relative;
+}
+.block {
     position: absolute;
-    
+}
+h1 {
+    text-align: center;
 }

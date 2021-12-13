@@ -3,8 +3,10 @@ import './dictionary.css';
 
 function Dictionary(props) {
     return(
+ 
         <>
-        <button className="button">{props.name}</button>
+    <input type="button" value={props.name} className="button"/>
+    
         
         </>
     )
