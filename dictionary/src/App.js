@@ -20,9 +20,6 @@ function App() {
       <Dictionary name="work" />
       <Dictionary name="give" />
       <Dictionary name="our" />
-
-    
-  
       <Test />
     </div>
     </>
