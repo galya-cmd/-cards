@@ -14,7 +14,7 @@ body {
     position: relative;
 }
 .block {
-    position: absolute;
+    text-align: center;
 }
 h1 {
     text-align: center;

@@ -1,0 +1,10 @@
+.table-cart {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat (3, 1fr);
+    
+    background-color: burlywood;
+    border: 2px solid rebeccapurple;
+
+
+}

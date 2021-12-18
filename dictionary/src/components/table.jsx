@@ -6,10 +6,10 @@ class Table extends React.Component {
   const {name,translation} = this.props;
     return(
     
-      <div className="cart">
-      <div className="table-name">{name}</div>
-      <div className="table-translation">{translation}</div>
-    <div>
+      <div className="table-cart">
+      <div>Слово</div>
+    <div>Транскрипция</div>
+    <div>Кнопки
     <button>сохранить</button>
         <button>редактировать</button>
         <button>удалить</button>
