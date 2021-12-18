@@ -3,6 +3,8 @@ import './App.css';
 
 import Dictionary from './components/dictionary';
 import Test from './components/test';
+import Table from './components/table';
+
 
 
 
@@ -21,6 +23,9 @@ function App() {
       <Dictionary name="give" />
       <Dictionary name="our" />
       <Test />
+    </div>
+    <div>
+      <Table/>
     </div>
     </>
   );
