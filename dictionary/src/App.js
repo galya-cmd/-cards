@@ -5,7 +5,11 @@ import Dictionary from './components/dictionary';
 import Test from './components/test';
 import Table from './components/table';
 
-
+let dicts = [{name: 'hi', transcription : '[хай]', translation:"привет" },{
+  name: 'hello', transcription : '[хэлоу]', translation:"здравствуйте,привет" 
+}, {
+  name: 'sorry', transcription : '[сори]', translation:"извини(те)" 
+}]
 
 
 
@@ -16,7 +20,7 @@ function App() {
     <div className="App">
       <Dictionary name="I" />
       <Dictionary name="love" />
-      <Dictionary name="IT" />
+      <Dictionary name="it" />
       <Dictionary name="need" />
       <Dictionary name="any" />
       <Dictionary name="work" />
@@ -25,7 +29,11 @@ function App() {
       <Test />
     </div>
     <div>
-      <Table/>
+      
+       {
+        dicts.map((dict) => <Table name={dict.name} transcription = {dict.transcription } translation = {dict.translation}></Table>
+        )
+      }
     </div>
     </>
   );

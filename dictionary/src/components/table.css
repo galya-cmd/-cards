@@ -1,24 +1,36 @@
+
 .table-cart {
     width: 600px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 250px ;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     column-gap: 5px;
     justify-content: center;
-    justify-items: stretch;
-    background-color: beige;
+    background-color: pink;
     border: 2px solid rebeccapurple;
-    margin-left: 150px;
+    border-radius: 10px;
+    margin-left: 100px;
 
 
 
 }
 .delete {
     background-color: red;
+    border-radius: 10px;
 }
 .save {
     background-color: green;
+    border-radius: 10px;
 }
 button :hover{
     background-color: rgb(144, 186, 194);
+}
+.transcription ,
+.translation ,
+.table-button {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
