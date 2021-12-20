@@ -7,14 +7,18 @@ class Table extends React.Component {
         return (
 
             <div className="table-cart">
+                
                 <div>Слово</div>
-                <div>{name}</div>
                 <div>Транскрипция</div>
-                <div>{translation}</div>
-                <div>Кнопки
-                    <button>сохранить</button>
-                    <button>редактировать</button>
-                    <button>удалить</button>
+                <div>Кнопка</div>
+                
+                <div>
+                <input type='text'></input>
+                </div>
+                <div><input type='text'></input></div>
+                <div>
+                <button className='delete'>delete</button>
+                <button className='save'>save</button>
                 </div>
             </div>
         );
