@@ -3,14 +3,19 @@ import './table.css';
 
 class Table extends React.Component {
     render() {
-        const { name, translation } = this.props;
+       
+        const { name,transcription, translation } = this.props;
         return (
 
             <div className="table-cart">
-                
-                <div>Слово</div>
-                <div>Транскрипция</div>
+                <div>слово</div>
+                <div>транскрипция</div>
+                <div>перевод</div>
                 <div>Кнопка</div>
+                <div>{name}</div>
+                <div>{transcription}</div>
+                <div>{translation}</div>
+                
                 
                 <div>
                 <input type='text'></input>
@@ -18,7 +23,7 @@ class Table extends React.Component {
                 <div><input type='text'></input></div>
                 <div>
                 <button className='delete'>delete</button>
-                <button className='save'>save</button>
+                <button className='save'>Save</button>
                 </div>
             </div>
         );
