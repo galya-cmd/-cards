@@ -4,6 +4,9 @@ import './App.css';
 import Dictionary from './components/dictionary';
 import Test from './components/test';
 import Table from './components/table';
+import Dictionary1 from './components/dictionary1';
+import Dictionary2 from './components/dictionary2';
+
 
 let dicts = [{name: 'hi', transcription : '[хай]', translation:"привет" },{
   name: 'hello', transcription : '[хэлоу]', translation:"здравствуйте,привет" 
@@ -20,17 +23,13 @@ function App() {
     <div className="App">
       <Dictionary name="I" />
       <Dictionary name="love" />
-      <Dictionary name="it" />
-      <Dictionary name="need" />
-      <Dictionary name="any" />
-      <Dictionary name="work" />
-      <Dictionary name="give" />
-      <Dictionary name="our" />
+      <Dictionary2 />
+      <Dictionary1 />
       <Test />
     </div>
     <div>
       
-       {
+      {
         dicts.map((dict) => <Table name={dict.name} transcription = {dict.transcription } translation = {dict.translation}></Table>
         )
       }

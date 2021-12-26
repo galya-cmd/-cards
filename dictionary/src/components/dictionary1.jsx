@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './dictionary.css';
 
 
-function Dictionary(props) {
+function Dictionary1(props) {
 
     const [presset, setPresset] = useState(false);
     const handleChange = () => {
@@ -11,13 +11,13 @@ function Dictionary(props) {
     return(
  
         <>
-    <input className='button'{...props} onClick={handleChange} value={
-        presset ? '[ai]' : 'I'
-    } />
+    <input className='button' {...props} onClick={handleChange} value={
+        presset ? '[Хай]' : 'Hello'
+        } />
     
         
         </>
     )
 }
 
-export default Dictionary;
+export default Dictionary1;
