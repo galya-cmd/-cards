@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-
+import{BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Dictionary from './components/dictionary';
 import Test from './components/test';
 import Table from './components/table';
 import Dictionary1 from './components/dictionary1';
 import Dictionary2 from './components/dictionary2';
+import Header from "./components/header";
+import About from './components/about'
+
 
 
 let dicts = [{name: 'hi', transcription : '[хай]', translation:"привет" },{
@@ -19,12 +22,22 @@ let dicts = [{name: 'hi', transcription : '[хай]', translation:"привет"
 function App() {
   return (
     <>
-    <h1>Слова</h1>
+    <Header />
+    <h1>Таблица слов</h1>
+    <Router>
+    <Routes>
+      
+      <Route exact path='/table'element={<Table/>}></Route>
+        <Route  path='/about' element={<About/>}></Route>
+        <Route path='/dictionary'element={<Dictionary />}></Route>
+    
+    </Routes>
+    </Router>
+    
     <div className="App">
       
-      <Dictionary />
-      <Dictionary2 />
-      <Dictionary1 />
+      
+      
       
     </div>
     <div>
@@ -35,7 +48,7 @@ function App() {
       }
     </div>
 
-    <Test />
+  
     </>
   );
 }

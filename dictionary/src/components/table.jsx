@@ -3,10 +3,10 @@ import './table.css';
 
 class Table extends React.Component {
     render() {
-       
+        
         const { name,transcription, translation } = this.props;
         return (
-
+            <>
             <div className="table-cart">
                 <div className="name">слово</div>
                 <div className="transcription">транскрипция</div>
@@ -20,6 +20,9 @@ class Table extends React.Component {
                 <button className='save'>Save</button>
                 </div>
             </div>
+
+
+</>
         );
     }
 }

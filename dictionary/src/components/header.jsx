@@ -1,12 +1,13 @@
+import './dictionary.css';
 function Header (){
     return (
         <>
-        <nav className="nav">
+        <nav className="menu-main">
         <ul>
-            <li><a href='/'>Main</a></li>
+            <li><a href='/table'>Table</a></li>
             <li><a href='/about'>About</a></li>
-            <li><a href='/card'>Card</a></li>
-        </ul>
+            <li><a href='/dictionary'>Dictionary</a></li>
+            </ul>
       </nav>
         
         </>
