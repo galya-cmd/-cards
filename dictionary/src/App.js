@@ -21,8 +21,8 @@ function App() {
     <>
     <h1>Слова</h1>
     <div className="App">
-      <Dictionary name="I" />
-      <Dictionary name="love" />
+      
+      <Dictionary />
       <Dictionary2 />
       <Dictionary1 />
       <Test />
