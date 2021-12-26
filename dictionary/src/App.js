@@ -25,7 +25,7 @@ function App() {
       <Dictionary />
       <Dictionary2 />
       <Dictionary1 />
-      <Test />
+      
     </div>
     <div>
       
@@ -34,6 +34,8 @@ function App() {
         )
       }
     </div>
+
+    <Test />
     </>
   );
 }

@@ -11,11 +11,14 @@ function Dictionary(props) {
     return(
  
         <>
+        <form>
+    
     <input className='button'{...props} onClick={handleChange} value={
         presset ? '[ai]' : 'I'
     } />
+  
     
-        
+    </form> 
         </>
     )
 }

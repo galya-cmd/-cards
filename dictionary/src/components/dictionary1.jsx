@@ -12,7 +12,7 @@ function Dictionary1(props) {
  
         <>
     <input className='button' {...props} onClick={handleChange} value={
-        presset ? '[Хай]' : 'Hello'
+        presset ? 'Привет' : 'Hello'+ " " + '[хэлоу]'
         } />
     
         
