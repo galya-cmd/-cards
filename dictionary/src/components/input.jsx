@@ -4,7 +4,7 @@ import './dictionary.css';
 
 
 
-function Dictionary(props) {
+function Input(props) {
 
     const [presset, setPresset] = useState(false);
     const handleChange = () => {
@@ -33,4 +33,4 @@ function Dictionary(props) {
     )
 }
 
-export default Dictionary;
+export default Input;

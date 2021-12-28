@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import{BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Dictionary from './components/dictionary';
+import Input from './components/input';
 import Test from './components/test';
 import Table from './components/table';
 import Dictionary1 from './components/dictionary1';
@@ -23,7 +23,8 @@ function App() {
   return (
     <>
     <Header />
-    <h1>Таблица слов</h1>
+    <Input />
+    <h1>Word table</h1>
     <Router>
     <Routes>
       
