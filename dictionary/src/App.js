@@ -7,14 +7,41 @@ import Table from './components/table';
 import Dictionary1 from './components/dictionary1';
 import Dictionary2 from './components/dictionary2';
 import Header from "./components/header";
-import About from './components/about'
+import About from './components/about';
+import Input from "./components/input";
 
 
 
-let dicts = [{name: 'hi', transcription : '[хай]', translation:"привет" },{
-  name: 'hello', transcription : '[хэлоу]', translation:"здравствуйте,привет" 
-}, {
-  name: 'sorry', transcription : '[сори]', translation:"извини(те)" 
+let dicts = [{
+  id: "10919",
+  name: 'horse',
+ transcription : '[hɔːs]',
+  translation:"лошадь" },
+  {
+    id: "10920",
+  name: 'mouse',
+   transcription : '[maʊs]', 
+   translation:"мышь" 
+}, 
+{
+  id: "10921",
+  name: 'dragonfly', 
+  transcription : '[ˈdrægənflaɪ]', 
+  translation:"стрекоза" 
+},
+{
+  id: "10922",
+  name: "dog",
+transcription: "[dɒg]",
+translation: "собака",
+},
+{
+  id: "10924",
+  name: "rabbit",
+  transcription: "[ˈræbɪt]",
+  translation:"кролик",
+
+  
 }]
 
 
@@ -44,7 +71,7 @@ function App() {
     <div>
       
       {
-        dicts.map((dict) => <Table name={dict.name} transcription = {dict.transcription } translation = {dict.translation}></Table>
+        dicts.map((dict) => <Table name={dict.name} transcription = {dict.transcription } translation = {dict.translation} key={dict.id}></Table>
         )
       }
     </div>
