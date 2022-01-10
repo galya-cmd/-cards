@@ -4,10 +4,10 @@ import './table.css';
 class Table extends React.Component {
     render() {
         
-        const { name,transcription, translation } = this.props;
+        const { name,transcription, translation , id} = this.props;
         return (
             <>
-            <div className="table-cart">
+            <div className="table-cart" key={id}>
                 <div className="name">слово</div>
                 <div className="transcription">транскрипция</div>
                 <div className='translation'>перевод</div>

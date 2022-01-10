@@ -1,6 +1,22 @@
-
+import React, {useState} from 'react';
 import './dictionary.css';
+function Input({text, trans}) {
 
+    const [presset, setPresset] = useState(false);
+    const handleChange = () => {
+        setPresset(!presset);
+    }
+    return(
+
+        <>
+        <input
+        className='button' onClick={handleChange} value={presset ? text : trans} />
+        
+
+    
+        </>
+    )
+}
 
 
 
