@@ -9,25 +9,29 @@ function Dictionary(props) {
         setPresset(!presset);
     }
     return(
-
-    
+ 
+        <>
         
-    <>
-    <form>
+        <form>
+    
     <input className='button'{...props} onClick={handleChange} value={
         presset ? 'Я' : 'I' + " " + '[ai]'
     } />
-    <input className='button' {...props} onClick={handleChange} value={
+     <input className='button' {...props} onClick={handleChange} value={
         presset ? 'Привет' : 'Hello'+ " " + '[хэлоу]'
         } />
     <input className='button' {...props} onClick={handleChange} value={
         presset ? 'Дом' : 'House' + " " + "[ haʊs ]"
         } />
-        
-        </form>
+    
+    
+    </form> 
+    
         </>
-)
-        export default Dictionary;
+    )
+}
+
+export default Dictionary;
     
     
 

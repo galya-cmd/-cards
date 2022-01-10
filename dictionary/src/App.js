@@ -4,8 +4,7 @@ import{BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Dictionary from './components/dictionary';
 import Test from './components/test';
 import Table from './components/table';
-import Dictionary1 from './components/dictionary1';
-import Dictionary2 from './components/dictionary2';
+
 import Header from "./components/header";
 import About from './components/about';
 import Input from "./components/input";
@@ -52,22 +51,19 @@ function App() {
     <Header />
     
     <h1>Word table</h1>
+   
+    
+    <div className="App">
     <Router>
     <Routes>
-      
-      <Route exact path='/table'element={<Table/>}></Route>
-        <Route  path='/about' element={<About/>}></Route>
+    <Route exact path='/about' element={<About/>}></Route>
+      <Route path='/table'element={<Table/>}></Route>
+        
         <Route path='/dictionary'element={<Dictionary />}></Route>
     
     </Routes>
     </Router>
-    
-    <div className="App">
       
-      
-      
-      
-    </div>
     <div>
       
       {
@@ -75,6 +71,10 @@ function App() {
         )
       }
     </div>
+      
+      
+    </div>
+  
 
   
     </>
