@@ -1,5 +1,6 @@
 
 .table-cart {
+    margin: 0, auto;
     width: 600px;
     display: grid;
     place-items: center;
@@ -10,7 +11,7 @@
     background-color: pink;
     border: 2px solid rebeccapurple;
     border-radius: 10px;
-    margin-left: 100px;
+    
 
 
 

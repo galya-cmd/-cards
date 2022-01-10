@@ -6,7 +6,7 @@ body {
 
 
 justify-content: center;
-   margin: 4px;
+   margin: 0, auto;
    
     font-family: 'Ubuntu Condensed', sans-serif;
     text-align: center;
@@ -24,6 +24,7 @@ justify-content: center;
     text-align: center;
 }
 h1 {
+  margin: 0, auto;
     text-align: center;
     font-family: 'Ubuntu Condensed', sans-serif;
 }

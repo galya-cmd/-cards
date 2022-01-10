@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './dictionary.css';
-function Input({text, trans}) {
+
+
+function Dictionary(props) {
 
     const [presset, setPresset] = useState(false);
     const handleChange = () => {
@@ -8,31 +10,26 @@ function Input({text, trans}) {
     }
     return(
 
-        <>
-        <input
-        className='button' onClick={handleChange} value={presset ? text : trans} />
+    
         
-
-    
-        </>
-    )
-}
-
-
-
-
-
-
-
-function Dictionary(props) {
     <>
-<form>
-    <input  text = "Я" trans="I [ай]"/>
-    <input  text = "Я" trans="I [ай]"/>
-    <input  text = "Я" trans="I [ай]"/>
-</form> 
+    <form>
+    <input className='button'{...props} onClick={handleChange} value={
+        presset ? 'Я' : 'I' + " " + '[ai]'
+    } />
+    <input className='button' {...props} onClick={handleChange} value={
+        presset ? 'Привет' : 'Hello'+ " " + '[хэлоу]'
+        } />
+    <input className='button' {...props} onClick={handleChange} value={
+        presset ? 'Дом' : 'House' + " " + "[ haʊs ]"
+        } />
+        
+        </form>
+        </>
+)
+        export default Dictionary;
     
-    </>
-}
+    
 
-export default Dictionary;
+
+
