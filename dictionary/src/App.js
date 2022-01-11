@@ -7,7 +7,8 @@ import Table from './components/table';
 
 import Header from "./components/header";
 import About from './components/about';
-import Input from "./components/input";
+import wordlist from "./components/wordlist";
+import WordList from './components/wordlist';
 
 
 
@@ -74,7 +75,7 @@ function App() {
       
       
     </div>
-  
+  <WordList />
 
   
     </>

@@ -2,7 +2,8 @@ export default [{
     id: "10919",
     name: 'horse',
    transcription : '[hɔːs]',
-    translation:"лошадь" 
+    translation:"лошадь" ,
+    isEditMode : true
     
   },
     {
