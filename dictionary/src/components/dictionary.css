@@ -91,3 +91,11 @@ ul {
   margin: 0 30px;
 }
 }
+.list{
+  padding: 10px;
+  margin: 20px;
+  width: 250px;
+  height: 150px;
+  background-color:rgba(175, 227, 240, 0.877);
+  border-radius: 10px;
+}

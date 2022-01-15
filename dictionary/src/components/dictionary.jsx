@@ -12,20 +12,18 @@ function Dictionary(props) {
  
         <>
         
-        <form>
-    
+        
+    <div className='list'>
+    <button>назад</button>
     <input className='button'{...props} onClick={handleChange} value={
         presset ? 'Я' : 'I' + " " + '[ai]'
     } />
-     <input className='button' {...props} onClick={handleChange} value={
-        presset ? 'Привет' : 'Hello'+ " " + '[хэлоу]'
-        } />
-    <input className='button' {...props} onClick={handleChange} value={
-        presset ? 'Дом' : 'House' + " " + "[ haʊs ]"
-        } />
+    <button>вперед</button>
+    
+    </div>
     
     
-    </form> 
+    
     
         </>
     )
