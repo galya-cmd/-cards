@@ -4,7 +4,7 @@ import{BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Dictionary from './components/dictionary';
 import Test from './components/test';
 import Table from './components/table';
-
+import Cardlist from './components/cardlist';
 import Header from "./components/header";
 import About from './components/about';
 import wordlist from "./components/wordlist";
@@ -64,7 +64,7 @@ function App() {
     
     </Routes>
     </Router>
-      
+    <Cardlist/>
     <div>
       
       {
@@ -76,6 +76,7 @@ function App() {
       
     </div>
   <WordList />
+  
 
   
     </>

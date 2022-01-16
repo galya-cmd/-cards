@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Cardlist from './cardlist';
 import './dictionary.css';
 
 
@@ -14,11 +15,16 @@ function Dictionary(props) {
         
         
     <div className='list'>
-    <button>назад</button>
+    
     <input className='button'{...props} onClick={handleChange} value={
         presset ? 'Я' : 'I' + " " + '[ai]'
     } />
-    <button>вперед</button>
+    
+
+    <div>
+    
+
+    </div>
     
     </div>
     
