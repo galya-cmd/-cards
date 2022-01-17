@@ -1,0 +1,45 @@
+.wordlist{
+    border: 2px solid rebeccapurple;
+    display: grid;
+    grid-template-columns: 1fr , 1fr , 1fr, 1fr;
+    grid-template-rows: 1fr;
+    
+}
+/* .name{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-template-rows: 1fr;
+}
+.transcription{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-template-rows: 1fr;
+}
+.translation{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-template-rows: 1fr;
+} */
+.delite {
+    background-color: red;
+    border-radius: 10px;
+}
+.save {
+    background-color: green;
+    border-radius: 10px;
+}
+.transcription ,
+.translation ,
+.name,
+.button-wordlist
+{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.table {
+    display: grid;
+    grid-template-columns: 1fr , 1fr , 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+}

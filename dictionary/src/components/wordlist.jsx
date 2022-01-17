@@ -1,6 +1,6 @@
 import React from 'react';
 import data from './data';
-import './table.css';
+import './wordList.css';
 
 function WordList() {
     
@@ -16,12 +16,13 @@ function WordList() {
         return (
             <>
     
-            <div className="table-cart">
+            < div className="wordlist">
                 <div className="name">слово</div>
                 <div className="transcription">транскрипция</div>
                 <div className='translation'>перевод</div>
-                <div className='table-button'>кнопка</div>
-                <div>{wordList}</div>
+                <div className='button-wordlist'>кнопка</div>
+                
+                <div className='table'>{wordList}</div>
                 
                 
                 
@@ -43,11 +44,11 @@ function WordList() {
             }
             </div>
             
-            {isEditMode ? <button>Save</button> :null
+            {isEditMode ? <button className='save'>Save</button> :null
             }
 
             {
-                isEditMode ? null : <button>Delite</button> 
+                isEditMode ? null : <button className='delite'>Delite</button> 
             }
             {isEditMode ? <button>Cancel</button> : <button>Edit</button>}
         

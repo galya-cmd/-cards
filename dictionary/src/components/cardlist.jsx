@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState} from 'react';
 import Card from './card';
-import data from './data';
+import './cardlist.css';
 
 
 
@@ -22,10 +22,10 @@ if (currentIndex === data.length){
     return(
         <>
       <div className="card-list">
-        {currentIndex > 0 && <button onClick={onPrev}>{"<-"}</button>}
+        {currentIndex > 0 && <button className='button-cardlist' onClick={onPrev}>{"<-"}</button>}
         <Card {...data[currentIndex]} />
-        {currentIndex + 1} / {data.length}
-        <button onClick={onNext}>{"->"}</button>
+        
+        <button className='button-cardlist' onClick={onNext}>{"->"}</button>
       </div>
         </>
     )

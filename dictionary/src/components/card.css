@@ -1,0 +1,15 @@
+
+.button-card
+ {
+    margin-bottom: 10px;
+    background-color: yellow;
+    padding: 6px 30px;
+    border-radius: 10px;
+
+}
+.button-translation {
+    margin-bottom: 10px;
+    background-color: rgb(144, 186, 194);
+    padding: 6px 25px;
+    border-radius: 10px;
+}
