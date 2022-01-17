@@ -1,11 +1,11 @@
 import React from 'react';
 import {useState} from 'react';
-import Dictionary from './dictionary';
+import Card from './card';
 import data from './data';
 
 
 
-function Cardlist ({}) {
+function Cardlist ({data}) {
 const [currentIndex, setCurrentindex] = useState(0);
 
 function onNext (){
@@ -21,15 +21,12 @@ if (currentIndex === data.length){
 }else
     return(
         <>
-        <div>
-            {
-            currentIndex > 0 && <button onClick={onPrev}>{'<-'}</button>
-            }
-            
-            <Dictionary {...data[currentIndex]}/>
-            {currentIndex + 1} / {data.length}
-            <button onClick={onNext}>{'->'}</button>
-        </div>
+      <div className="card-list">
+        {currentIndex > 0 && <button onClick={onPrev}>{"<-"}</button>}
+        <Card {...data[currentIndex]} />
+        {currentIndex + 1} / {data.length}
+        <button onClick={onNext}>{"->"}</button>
+      </div>
         </>
     )
 }
