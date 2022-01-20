@@ -1,31 +1,22 @@
-.wordlist{
-    border: 2px solid rebeccapurple;
-    display: grid;
-    grid-template-columns: 1fr , 1fr , 1fr, 1fr;
-    grid-template-rows: 1fr;
-    
+.table {
+    background-color: pink;
+    border-radius: 10px;
+    border: 2px solid black
 }
-/* .name{
-    display: grid;
-    grid-template-columns: 1fr  ;
-    grid-template-rows: 1fr;
-}
-.transcription{
-    display: grid;
-    grid-template-columns: 1fr  ;
-    grid-template-rows: 1fr;
-}
-.translation{
-    display: grid;
-    grid-template-columns: 1fr  ;
-    grid-template-rows: 1fr;
-} */
 .delite {
     background-color: red;
     border-radius: 10px;
 }
 .save {
     background-color: green;
+    border-radius: 10px;
+}
+.cancel{
+    background-color: yellow;
+    border-radius: 10px;
+}
+.edit{
+    background-color: orange;
     border-radius: 10px;
 }
 .transcription ,
@@ -38,8 +29,4 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 .name{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.table {
-    display: grid;
-    grid-template-columns: 1fr , 1fr , 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
-}
+

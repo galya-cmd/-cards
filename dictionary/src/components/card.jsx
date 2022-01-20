@@ -11,7 +11,7 @@ function Card({id , name, transcription, translation, isbuttonTranslation}) {
         setPresset(!presset);
 
     }
-    const buttonTranslation = () => {
+    function buttonTranslation () {
       setButtonpreset(!buttonPresset);
       
     }
@@ -28,7 +28,7 @@ function Card({id , name, transcription, translation, isbuttonTranslation}) {
       <p>{name}</p>
       <p>{transcription}</p>
       {
-    presset ?  <button className ='button-translation'>translation</button> : <button className='button-card' onClick={handleChange}>{presset ? null : translation}</button> 
+    presset ?  <button onClick={buttonTranslation} className ='button-translation'>translation</button> : <button className='button-card' onClick={handleChange}>{presset ? null : translation}</button> 
       }
       
       

@@ -1,64 +1,103 @@
-import React from 'react';
+import React, { useState } from 'react';
 import data from './data';
 import './wordList.css';
 
 function WordList() {
-    
+
     const wordList = data.map((item) => {
         return (
-        <Word key={item.id}{...item} />
+            <Word key={item.id}{...item} />
 
         );
 
     })
 
-        
-        return (
-            <>
-    
-            < div className="wordlist">
-                <div className="name">слово</div>
-                <div className="transcription">транскрипция</div>
-                <div className='translation'>перевод</div>
-                <div className='button-wordlist'>кнопка</div>
-                
-                <div className='table'>{wordList}</div>
-                
-                
-                
-                
-            </div>
-</>
-        );
-    }
-    function Word({name, transcription,translation,id, isEditMode}) {
-        return (
-            <>
-            <div className='wordTable'>
-            <div>  {
-                isEditMode ? <input defaultValue={name}/> : name
-            }</div>
-            <div>{transcription}</div>
-            <div> {
-                isEditMode ? <input defaultValue={translation}/> : translation
-            }
-            </div>
-            
-            {isEditMode ? <button className='save'>Save</button> :null
-            }
 
-            {
-                isEditMode ? null : <button className='delite'>Delite</button> 
-            }
-            {isEditMode ? <button>Cancel</button> : <button>Edit</button>}
-        
-            </div>
-            </>
+    return (
+        <>
+            <table className='table'>
+                <thead >
+                    <tr>
+                        <th>слово!</th>
+                        <th>транскрипция</th>
+                        <th>перевод</th>
+                        <th>кнопка</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {wordList}
+                </tbody>
 
-        );
+            </table>
 
+        </>
+    );
+}
+function Word({ name, transcription, translation, id }) {
+
+    const [isEditMode, changeEditMode] = useState(false);
+    const [input, setInput] = useState({name, translation});
+
+    function onClick() {
+        changeEditMode(true)
     }
 
+    // function onClickcancel() {
+    //     changeEditMode(false)
+    // }
+
+    function onNamechenge (event) {
+        setInput({
+            name : event.target.value ,
+            translation: input.translation,
+        })
+        
+    }
+    function onTranslationchenge(event)
+    {
+        setInput({
+            name : input.name,
+            translation : event.target.value
+        })
+    }
+    function onCancelechenge (event){
+        setInput ({
+            name : name,
+            translation : translation,
+        })
+        changeEditMode(false)
+        
+    }
+        
+        
     
+
+    return (
+        <>
+            <tr>
+                <td>
+                    {isEditMode ? <input onChange={onNamechenge} defaultValue={input.name} /> : name}
+                </td>
+                <td>{input.transcription}</td>
+                <td>
+                    {isEditMode ? <input onChange={onTranslationchenge} defaultValue={input.translation} /> : translation}
+                </td>
+                <td>
+                    {
+                        isEditMode ? <button className='save'>Save</button> : null
+                    }
+                    {
+                        isEditMode ? null : <button className='delite'>Delite</button>
+                    }
+        {isEditMode ? <button className='cancel'  onClick={onCancelechenge}>Cancel</button> : <button className='edit' onClick={onClick}>Edit</button>}
+                </td>
+            </tr>
+        </>
+
+    );
+
+}
+
+
 
 export default WordList;
