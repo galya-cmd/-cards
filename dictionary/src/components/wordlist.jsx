@@ -78,7 +78,7 @@ function Word({ name, transcription, translation, id }) {
                 <td>
                     {isEditMode ? <input onChange={onNamechenge} defaultValue={input.name} /> : name}
                 </td>
-                <td>{input.transcription}</td>
+                <td>{transcription}</td>
                 <td>
                     {isEditMode ? <input onChange={onTranslationchenge} defaultValue={input.translation} /> : translation}
                 </td>
