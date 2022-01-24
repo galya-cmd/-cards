@@ -26,7 +26,10 @@ function App() {
       <Route path='/wordlist' element={<WordList data={data}/>}></Route>
         
         <Route path='/dictionary'element={<Cardlist data={data}/>}></Route>
-        <Route  path='/about' element={<About/>}></Route>
+        <Route  path='/about' element={<WordList data={data} />} ></Route>
+        
+        
+      
     
     </Routes>
     </Router>
