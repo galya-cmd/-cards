@@ -7,6 +7,7 @@ import Header from "./components/header";
 import About from './components/about';
 import WordList from './components/wordlist';
 import data from './components/data';
+import Error from './components/error';
 
 
 
@@ -26,8 +27,9 @@ function App() {
       <Route path='/wordlist' element={<WordList data={data}/>}></Route>
         
         <Route path='/dictionary'element={<Cardlist data={data}/>}></Route>
-        <Route  path='/about' element={<WordList data={data} />} ></Route>
-        
+        <Route  path='/about' element={<About />} ></Route>
+
+        <Route path= "*" element={Error}/>
         
       
     
