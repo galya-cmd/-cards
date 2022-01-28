@@ -5,11 +5,13 @@ import './card.css';
 
 function Card({id , name, transcription, translation, isbuttonTranslation}) {
     const [buttonPresset, setButtonpreset] = useState(true)
-    const [presset, setPresset] = useState(true);
+    const [presset, setPresset] = useState(0);
 
     const handleChange = () => {
-        setPresset(!presset);
-
+      setPresset(!presset);
+        // let val = presset;
+        // val++
+        // setPresset(val);
     }
     function buttonTranslation () {
       setButtonpreset(!buttonPresset);
@@ -28,12 +30,13 @@ function Card({id , name, transcription, translation, isbuttonTranslation}) {
       <p>{name}</p>
       <p>{transcription}</p>
       {
-    presset ?  <button onClick={buttonTranslation} className ='button-translation'>translation</button> : <button className='button-card' onClick={handleChange}>{presset ? null : translation}</button> 
+    presset ?  <button onClick={buttonTranslation} className ='button-translation'>translation</button> : <button className='button-card'onClick={handleChange}>{presset ? null : translation}</button> 
       }
       
       
       
     </div>
+    <p>{presset}</p>
     
         </>
     )

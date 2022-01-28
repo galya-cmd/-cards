@@ -18,7 +18,7 @@ function WordList() {
             <table className='table'>
                 <thead >
                     <tr>
-                        <th>слово!</th>
+                        <th>слово</th>
                         <th>транскрипция</th>
                         <th>перевод</th>
                         <th>кнопка</th>
