@@ -1,16 +1,20 @@
 
 .card-list{
-    margin: 0, auto;
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
     width: 250px;
-    background-color: pink;
     border-radius: 10px;
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: large;
     text-align: center;
+    background-color: pink;
+    padding: 10px 0;
 
     
 }
-.button-cardlist {
+.button-next,
+.button-prev {
     background-color: rgb(144, 186, 194);
     border-radius: 10px;
 }

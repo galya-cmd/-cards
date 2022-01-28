@@ -22,10 +22,10 @@ if (currentIndex === data.length){
     return(
         <>
       <div className="card-list">
-        {currentIndex > 0 && <button className='button-cardlist' onClick={onPrev}>{"<-"}</button>}
+        {currentIndex > 0 && <button className='button-prev' onClick={onPrev}>{"<-"}</button>}
         <Card {...data[currentIndex]} />
         
-        <button className='button-cardlist' onClick={onNext}>{"->"}</button>
+        <button className='button-next' onClick={onNext}>{'->'}</button>
       </div>
         </>
     )

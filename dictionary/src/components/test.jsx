@@ -1,4 +1,4 @@
-import './dictionary.css';
+
 
 
 function Test(props) {

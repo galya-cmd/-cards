@@ -17,6 +17,7 @@ function Card({id , name, transcription, translation, isbuttonTranslation}) {
       let val = buttonPresset;
       val++
       setButtonpreset(val);
+
     }
 
     useEffect(() => {
@@ -35,9 +36,6 @@ function Card({id , name, transcription, translation, isbuttonTranslation}) {
       {
     presset ?  <button onClick={buttonTranslation} className ='button-translation'>translation</button> : <button className='button-card'onClick={handleChange}>{presset ? null : translation}</button> 
       }
-      
-      
-      
     </div>
     <p>{buttonPresset}</p>
     

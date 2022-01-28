@@ -1,4 +1,4 @@
-import './dictionary.css';
+import './header.css';
 function Header (){
     return (
         <>
