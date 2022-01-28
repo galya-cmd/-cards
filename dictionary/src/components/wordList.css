@@ -1,8 +1,31 @@
-.table {
-    background-color: pink;
-    border-radius: 10px;
-    border: 2px solid black
+
+table {
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    
 }
+th {
+    border: 2px solid grey;
+    width: 20%;
+    background-color: pink;
+    
+}
+td {
+    border: 1px solid grey;
+    background-color: pink;
+   
+    
+}
+td:first-child {
+    width:30%
+}
+th, td {
+    padding: 10px 15px;
+}
+
+
+
 .delite {
     background-color: red;
     border-radius: 10px;

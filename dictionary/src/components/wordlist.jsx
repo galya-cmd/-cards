@@ -16,21 +16,17 @@ function WordList() {
     return (
         <>
         <h3>Таблица слов</h3>
-            <table className='table'>
+            <table>
                 <thead >
                     <tr>
                         <th>слово</th>
                         <th>транскрипция</th>
                         <th>перевод</th>
-                        <th>кнопка</th>
+                        <th>выбрать действие</th>
                     </tr>
-                </thead>
-                <tbody>
                     {wordList}
-                </tbody>
-
+                </thead>
             </table>
-
         </>
     );
 }

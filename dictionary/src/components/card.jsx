@@ -9,18 +9,21 @@ function Card({id , name, transcription, translation, isbuttonTranslation}) {
 
     const handleChange = () => {
       setPresset(!presset);
-        // let val = presset;
-        // val++
-        // setPresset(val);
+        
     }
+
     function buttonTranslation () {
       setButtonpreset(!buttonPresset);
-      
+      let val = buttonPresset;
+      val++
+      setButtonpreset(val);
     }
 
     useEffect(() => {
       setPresset(true);
     }, [id]);
+
+  
 
     
     return(
@@ -36,7 +39,7 @@ function Card({id , name, transcription, translation, isbuttonTranslation}) {
       
       
     </div>
-    <p>{presset}</p>
+    <p>{buttonPresset}</p>
     
         </>
     )
