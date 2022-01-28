@@ -15,6 +15,7 @@ function WordList() {
 
     return (
         <>
+        <h3>Таблица слов</h3>
             <table className='table'>
                 <thead >
                     <tr>

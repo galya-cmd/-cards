@@ -6,7 +6,7 @@ function About() {
 
         <h1>Мы очень стараемся!</h1>
         <WordList/>
-        
+    
 
         </>
     )
