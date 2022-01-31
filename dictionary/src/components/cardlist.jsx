@@ -7,7 +7,8 @@ import './cardlist.css';
 
 function Cardlist ({data}) {
 const [currentIndex, setCurrentindex] = useState(0);
-const [selected, setSelected] = useState([])
+const [selected, setSelected] = useState([]);
+
 const id = data[currentIndex].id;
 
 function isbuttonTranslation (){
@@ -33,12 +34,13 @@ if (currentIndex === data.length){
         <>
       <div className="card-list"> 
         {currentIndex === 0 ? null : <button className='button-prev' onClick={onPrev}>{"<-"}</button>}
-        <Card isbuttonTranslation={isbuttonTranslation}{...data[currentIndex]} />
+        <Card isbuttonTranslation={isbuttonTranslation} {...data[currentIndex]} />
         Открыто  {selected.length}  из {data.length}
         <button className='button-next' onClick={onNext}>{'->'}</button>
       
         
       </div>
+      Всего просмотрено
       {currentIndex + 1} \ {data.length}
         </>
     )
