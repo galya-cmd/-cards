@@ -26,7 +26,7 @@ if (currentIndex === data.length){
       <div className="card-list"> 
         {currentIndex === 0 ? null : <button className='button-prev' onClick={onPrev}>{"<-"}</button>}
         <Card {...data[currentIndex]} />
-        {currentIndex + 1} / {data.length}
+        {currentIndex + 1} \ {data.length}
         <button className='button-next' onClick={onNext}>{'->'}</button>
       
         
