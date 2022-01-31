@@ -10,10 +10,12 @@ const [currentIndex, setCurrentindex] = useState(0);
 
 function onNext (){
     setCurrentindex(currentIndex + 1);
+    
 }
 
 function onPrev (){
     setCurrentindex(currentIndex - 1);
+    console.log(currentIndex);
 }
 
 if (currentIndex === data.length){
@@ -21,12 +23,15 @@ if (currentIndex === data.length){
 }else
     return(
         <>
-      <div className="card-list">
-        {currentIndex > 0 && <button className='button-prev' onClick={onPrev}>{"<-"}</button>}
+      <div className="card-list"> 
+        {currentIndex === 0 ? null : <button className='button-prev' onClick={onPrev}>{"<-"}</button>}
         <Card {...data[currentIndex]} />
-        
+        {currentIndex + 1} / {data.length}
         <button className='button-next' onClick={onNext}>{'->'}</button>
+      
+        
       </div>
+      
         </>
     )
 }

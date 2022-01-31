@@ -32,7 +32,7 @@ function WordList() {
 }
 function Word({ name, transcription, translation, id }) {
 
-    const [isEditMode, changeEditMode] = useState(false);
+    const [isEditMode, changeEditMode] = useState(true);
     const [input, setInput] = useState({name, translation});
 
     function onClick() {
@@ -83,7 +83,7 @@ function Word({ name, transcription, translation, id }) {
                     {
                         isEditMode ? <button className='save'>Save</button> : null
                     }
-                    {
+                    { 
                         isEditMode ? null : <button className='delite'>Delite</button>
                     }
         {isEditMode ? <button className='cancel'  onClick={onCancelechenge}>Cancel</button> : <button className='edit' onClick={onClick}>Edit</button>}
