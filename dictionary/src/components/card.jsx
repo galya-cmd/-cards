@@ -14,6 +14,7 @@ function Card({id , name, transcription, translation, isbuttonTranslation}) {
 
     function buttonTranslation () {
       setButtonpreset(!buttonPresset);
+      isbuttonTranslation();
       // let val = buttonPresset;
       // val++;
       // setButtonpreset(val);
@@ -38,7 +39,7 @@ function Card({id , name, transcription, translation, isbuttonTranslation}) {
     presset ?  <button onClick={buttonTranslation} className ='button-translation'>translation</button> : <button className='button-card'onClick={handleChange}>{presset ? null : translation}</button> 
       }
     </div>
-     {/* <p>{buttonPresset}</p> */}
+     
     
    
         </>
