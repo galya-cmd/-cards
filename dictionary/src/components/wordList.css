@@ -52,4 +52,12 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 .name{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+input:focus{
+    border-color: red;
+    border: 3px solid green;
+}
+input:active {
+    border-color: red;
+    border: 3px solid green;
+}
 

@@ -29,19 +29,26 @@ function onPrev (){
 
 if (currentIndex === data.length){
     return "Вы прошли до конца!"
+
 }else
+
     return(
         <>
+         {currentIndex === 0 ? null : <button className='button-prev' onClick={onPrev}>{"<-"}</button>}
+
+
       <div className="card-list"> 
-        {currentIndex === 0 ? null : <button className='button-prev' onClick={onPrev}>{"<-"}</button>}
         <Card isbuttonTranslation={isbuttonTranslation} {...data[currentIndex]} />
         Открыто  {selected.length}  из {data.length}
-        <button className='button-next' onClick={onNext}>{'->'}</button>
-      
-        
-      </div>
+    </div>
+
+
+    <button className='button-next' onClick={onNext}>{'->'}</button>
+    
+    <div>
       Всего просмотрено
       {currentIndex + 1} \ {data.length}
+      </div>
         </>
     )
 }

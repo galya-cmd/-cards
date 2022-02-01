@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import data from './data';
 import './wordList.css';
 
 function WordList() {
-
+    let inputRef = useRef(null);
     const wordList = data.map((item) => {
         return (
             <Word key={item.id}{...item} />
@@ -32,8 +32,10 @@ function WordList() {
 }
 function Word({ name, transcription, translation, id }) {
 
-    const [isEditMode, changeEditMode] = useState(true);
+    const [isEditMode, changeEditMode] = useState(false);
     const [input, setInput] = useState({name, translation});
+    let inputRef = useRef(null);
+
 
     function onClick() {
         changeEditMode(true)
@@ -44,12 +46,21 @@ function Word({ name, transcription, translation, id }) {
     // }
 
     function onNamechenge (event) {
-        setInput({
-            name : event.target.value ,
-            translation: input.translation,
-        })
+         
+        if(inputRef.current.value == '' ){
+            
+                inputRef.current.focus();
+            
+        }
+
+            setInput({          
+                name : event.target.value ,
+                translation: input.translation,
+            })
+        }
+     
         
-    }
+    
     function onTranslationchenge(event)
     {
         setInput({
@@ -73,7 +84,7 @@ function Word({ name, transcription, translation, id }) {
         <>
             <tr>
                 <td>
-                    {isEditMode ? <input onChange={onNamechenge} defaultValue={input.name} /> : name}
+                    {isEditMode ? <input onChange={onNamechenge} defaultValue={input.name} ref={inputRef}/> : name}
                 </td>
                 <td>{transcription}</td>
                 <td>
