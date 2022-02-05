@@ -8,9 +8,10 @@ import './cardlist.css';
 function Cardlist ({data}) {
 const [currentIndex, setCurrentindex] = useState(0);
 const [selected, setSelected] = useState([]);
-const [words, setWords] = useState ([]);
+
 
 const id = data[currentIndex].id;
+console.log(id);
 
 
 function isbuttonTranslation (){
@@ -30,8 +31,9 @@ function onPrev (){
 }
 
 
-if (currentIndex === id.length){
+if (currentIndex == id.length){
     return ( <img src='images/fireworks1.png' width='60%' height='60%'/>)
+    
 
 
 }else {
