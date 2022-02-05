@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import{BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import{BrowserRouter as Router, Routes, Route, UNSAFE_NavigationContext} from 'react-router-dom';
 import Card from './components/card';
 import Cardlist from './components/cardlist';
 import Header from "./components/header";
@@ -8,7 +8,6 @@ import About from './components/about';
 import WordList from './components/wordlist';
 import data from './components/data';
 import Error from './components/error';
-import Test from './components/test';
 
 
 
@@ -42,7 +41,7 @@ function App() {
       
     </div>
   
-  
+
    
   
     </>

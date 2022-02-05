@@ -1,8 +1,9 @@
 
 .card-list{
-    display: inline-block;
+    margin: 10px;
+    /* display: inline-block;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; */
     width: 250px;
     border-radius: 10px;
     font-family: 'Ubuntu Condensed', sans-serif;
@@ -17,4 +18,26 @@
 .button-prev {
     background-color: rgb(144, 186, 194);
     border-radius: 10px;
+    align-items: center;
+    /* display: flex; */
+    min-width: 10px;
+  text-align: center;
+  display: inline-block;
+
+
+}
+.button-next{
+    margin-top: 10px;
+
+}
+.allCard{
+    box-sizing: border-box;
+     display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+button{
+
+    display: inline-flex;
 }

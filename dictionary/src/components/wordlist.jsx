@@ -59,9 +59,10 @@ function Word({ name, transcription, translation, id  }) {
         }
 
 //         let result = false;
+//         let ref = inputRefName.current.value
         
-//   for (let i = 0; i <= input.name.lenght, i++){
-//       if (input.name[i] === inputRefName){
+//   for (let i = 0; i <= ref.lenght, i++){
+//       if (ref[i] === input.name){
         
 //           result = true; break;
 //       }else{

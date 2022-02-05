@@ -34,7 +34,8 @@ if (currentIndex === data.length){
 
     return(
         <>
-         {currentIndex === 0 ? null : <button className='button-prev' onClick={onPrev}>{"<-"}</button>}
+        <div className='allCard'>
+         {currentIndex === 0 ? null : <button className='button-prev' onClick={onPrev}><img src='images/prev.png' width='20px' height='20px'/></button>}
 
 
       <div className="card-list"> 
@@ -43,12 +44,17 @@ if (currentIndex === data.length){
     </div>
 
 
-    <button className='button-next' onClick={onNext}>{'->'}</button>
+    
     
     <div>
-      Всего просмотрено
-      {currentIndex + 1} \ {data.length}
+      Всего просмотрено: 
+       {currentIndex + 1} \ {data.length}
       </div>
+
+      <button className='button-next' onClick={onNext}> <img src='images/next.png' width='20px' height='20px'/></button>
+
+      </div>
+      
         </>
     )
 }
