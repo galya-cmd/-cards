@@ -4,7 +4,7 @@ function Header (){
         <>
         <nav className="menu-main">
         <ul>
-        <li><a href='/about'>About Us</a></li>
+        <li><a href='/'>Home</a></li>
         <li><a href='/dictionary'>Dictionary</a></li>
         <li><a href='/wordlist'>Table</a></li>            
         </ul>
