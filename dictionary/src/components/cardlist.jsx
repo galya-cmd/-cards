@@ -27,7 +27,7 @@ function onPrev (){
     console.log(currentIndex);
 }
 
-if (currentIndex === data.length){
+if (currentIndex === id.length){
     return "Вы прошли до конца!"
 
 }else
