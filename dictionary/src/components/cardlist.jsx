@@ -31,11 +31,9 @@ function onPrev (){
 }
 
 
-if (currentIndex == id.length){
+if (currentIndex === data.length){
     return ( <img src='images/fireworks1.png' width='60%' height='60%'/>)
     
-
-
 }else {
     <h3>Попробую ещё раз!</h3>
 }

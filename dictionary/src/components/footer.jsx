@@ -1,0 +1,30 @@
+import React from 'react';
+import './footer.css';
+
+function Footer() {
+    return(
+        <>
+        < hr className='color-hr' />
+<section className='footer-container'>
+<section className='footer-info-1'>
+Салыкина Галина
+<br/>
+тел 99999999999
+</section>
+<section className='footer-info-2'>
+Email
+<br/>
+galya1985@bk.ru
+</section>
+<section className='footer-info-3'>
+    <a href='/'><img src='./images/tg.png'/></a>
+    <a href='/'><img src='./images/inst2.png'/></a>
+    <a href='/'><img src='./images/vk2.png'/></a>
+</section>
+</section>
+</>
+    )
+
+
+}
+export default Footer;

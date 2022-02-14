@@ -8,6 +8,9 @@ import About from './components/about';
 import WordList from './components/wordlist';
 import data from './components/data';
 import Error from './components/error';
+import Footer from './components/footer';
+
+
 
 
 
@@ -43,7 +46,7 @@ function App() {
     </div>
   
 
-  
+  <Footer />
     
     </>
   );

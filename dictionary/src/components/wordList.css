@@ -55,7 +55,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 
 .error {
-    
-    border: 3px solid red;
+        outline: red auto 2px;
 }
+
 
