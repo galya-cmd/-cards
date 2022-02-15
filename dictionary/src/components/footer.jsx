@@ -4,15 +4,15 @@ import './footer.css';
 function Footer() {
     return(
         <>
-        < hr className='color-hr' />
+    
 <section className='footer-container'>
 <section className='footer-info-1'>
-Салыкина Галина
+<span>Салыкина Галина</span>
 <br/>
 тел 99999999999
 </section>
 <section className='footer-info-2'>
-Email
+<span>Email</span> 
 <br/>
 galya1985@bk.ru
 </section>
