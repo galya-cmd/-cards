@@ -20,6 +20,7 @@ galya1985@bk.ru
     <a href='https://web.telegram.org/k/'><img src='./images/tg.png'/></a>
     <a href='/'><img src='./images/inst2.png'/></a>
     <a href='/'><img src='./images/vk2.png'/></a>
+    <a href='/'><img src='./images/vk2.png'/></a>
 </section>
 </section>
 </>
