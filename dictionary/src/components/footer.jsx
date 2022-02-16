@@ -7,12 +7,12 @@ function Footer() {
         < hr className='color-Hr'/>
 <section className='footer-container'>
 <section className='footer-info-1'>
-Салыкина Галина
+<span>Салыкина Галина</span>
 <br/>
 тел 99999999999
 </section>
 <section className='footer-info-2'>
-Email
+<span>Email</span> 
 <br/>
 galya1985@bk.ru
 </section>
