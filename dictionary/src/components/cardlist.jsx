@@ -52,15 +52,17 @@ if (currentIndex === data.length){
 
     
     
-    <div>
-      Всего просмотрено: 
-       {currentIndex + 1} \ {data.length}
-      </div>
+    
 
       <button className='button-next' onClick={onNext}> <img src='images/next.png' width='20px' height='20px'/></button>
 
-      </div>
       
+
+      </div>
+      <div className='total-views'>
+      Всего просмотрено: 
+       {currentIndex + 1} \ {data.length}
+      </div>
         </>
     )
 }
